@@ -9,8 +9,8 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 
-Disney_Characters = pd.read_csv(r"C:\Users\MC\Desktop\Coding crap\UBC data science\final project\disney-characters.csv")
-Disney_Reviews_df = pd.read_csv(r"C:\Users\MC\Desktop\Coding crap\UBC data science\final project\Disney_Reviews\DisneylandReviews.csv",encoding='latin-1')
+Disney_Characters = pd.read_csv("data/disney-characters.csv")
+Disney_Reviews_df = pd.read_csv("data/DisneylandReviews.csv",encoding='latin-1')
 
 Disney_Reviews_df = Disney_Reviews_df.assign(Review_Text=Disney_Reviews_df['Review_Text'].str.title())
 
